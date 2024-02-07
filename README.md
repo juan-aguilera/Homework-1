@@ -33,9 +33,10 @@ Python 3.11.0
 # Running locally and testing
 
 * Note: This instructions are for Windows. Mac or linux may require some changes. 
+* Note: If you have a script named test.bat that you want to execute on Mac/linux, you would need to convert it to a shell script file compatible with Mac/Linux. This often involves changing the syntax of commands and removing Unix-specific features. Additionally, you might need to adjust file paths to ensure they work correctly in the Mac/Linux environment.
 * To install dependencies: `pip3 install -r requirements.txt`
-* To run unit testing: `./test.sh`
-* To try a default example, run: `: ./run.sh`. In the file ./run.sh is just an example, you can modify it. Theck the `app.py` file to get to understand how it works.
+* To run unit testing: `./test.bat`
+* To try a default example, run: `: ./run.bat`. In the file ./run.bat is just an example, you can modify it. Theck the `app.py` file to get to understand how it works.
 
 # Current coverage
 
