@@ -1,5 +1,5 @@
 import random
-from search_in_array import constants
+import constants
 
 def random_list(size, lim = constants.MAX_VALUE):
     ran_list = []
@@ -8,5 +8,5 @@ def random_list(size, lim = constants.MAX_VALUE):
         
     return ran_list
 
-def gen_target(limit = constants.MAX_VALUE):
-    return random.randint(0, limit)
+def gen_target(sample_array):
+    return random.choice(sample_array)
