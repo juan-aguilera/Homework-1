@@ -9,7 +9,7 @@ Simple python project to show a way to take experiental execution time to compar
 
 ### Problem statement
 ​
-The sample problem is to take a list of array's and search a list of numbers or strings within them, with  the following criteria:
+The sample problem is to take a list of array's and search a list of numbers within them, with  the following criteria:
 
 * The input array's for binary search algorithm must be sorted. A default built-in python function inside the search algorithm, will be used for this propurse.
 * The input array's for ternary search algorithm must be sorted. A default built-in python function inside the search algorithm, will be used for this propurse.
@@ -38,24 +38,3 @@ Python 3.11.0
 * To run unit testing: `./test.bat`
 * To try a default example, run: `: ./run.bat`. In the file ./run.bat is just an example, you can modify it. Theck the `app.py` file to get to understand how it works.
 
-# Current coverage
-
-Make sure you have "coverage" in your requirements.txt file and run pip install. Then run `coverage run -m unittest discover` and after that run `coverage report` to get the following table:
-
-```
-Name                            Stmts   Miss  Cover
----------------------------------------------------
-test/__init__.py                    0      0   100%
-test/test_algorithms.py            24      1    96%
-test/test_data_generator.py        29      1    97%
-twistedsort/__init__.py             0      0   100%
-twistedsort/algorithms.py          27      3    89%
-twistedsort/constants.py            2      0   100%
-twistedsort/data_generator.py       9      1    89%
----------------------------------------------------
-TOTAL                              91      6    93%
-```
-
-# Code beautifier
-This code has been beautify using black: https://github.com/psf/black. 
-The command to use is `black . -l 120`.
