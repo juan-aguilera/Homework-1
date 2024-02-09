@@ -9,4 +9,4 @@ def random_list(size, lim = constants.MAX_VALUE):
     return ran_list
 
 def gen_target(sample_array):
-    return random.choice(sample_array)
+    return -12

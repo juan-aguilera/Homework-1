@@ -14,6 +14,7 @@ def take_execution_time(minimum_size, maximum_size, step, samples_by_size):
         table_row = [size]
         times = take_times(size, samples_by_size)
         return_table.append(table_row + times)
+        print(times)
 
     return return_table
 
