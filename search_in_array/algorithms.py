@@ -1,26 +1,30 @@
+from array import array
 # 1st algorithm : Linar search method
-
-def linear_search (array, target):
-    for i in range(len(array)):
-        if array[i] == target:
+def linear_search (my_array, target):
+    cnt = 0
+    for i in range(len(my_array)):
+        cnt +=1
+        if my_array[i] == target:
             return i
-    return print("Target not found")
+    return print("Target not found #1 " + str(cnt))
 
 #2nd algorithm : Binary search method
 
-def binary_search (array, target):
-    array.sort()
+def binary_search (my_array, target):
+    #my_array = array('i',sorted(my_array))
+    cnt = 0 
     min = 0
-    max = len(array)-1
+    max = len(my_array)-1
     while min <= max :
+        cnt += 1
         mid = (min + max) // 2
-        if array[mid] == target:
+        if my_array[mid] == target:
             return mid
-        elif array[mid] < target:
+        elif my_array[mid] < target:
             min = mid + 1
         else:
             max = mid - 1
-    return print("Target not found")
+    return print("Target not found #2 " + str(cnt))
 
 
 
@@ -42,26 +46,27 @@ def binary_search_reverse (array, target):
 
 #3rd algorithm : Ternary search method
 
-def ternary_search (array, target):
-    array.sort() 
+def ternary_search (my_array, target):
+    #my_array = array('i',sorted(my_array)) 
     low = 0
-    high = len(array) - 1 
-
+    high = len(my_array) - 1 
+    cnt = 0
     while low <= high : 
+        cnt += 1
         mid1 = low + (high-low) // 3
         mid2 = high - (high-low) // 3
-        if array[mid1] == target:
+        if my_array[mid1] == target:
             return mid1
-        elif array[mid2] == target:
+        elif my_array[mid2] == target:
             return mid2
-        elif array[mid2] < target :
+        elif my_array[mid2] < target :
             low = mid2 + 1 
-        elif array[mid1] > target :
+        elif my_array[mid1] > target :
             high = mid1 - 1
         else:
             low = mid1 + 1
             high = mid2 - 1
-    return print ("Target not found")
+    return print("Target not found #3  " + str(cnt))
 
 
 

@@ -10,4 +10,3 @@ def take_times(size, samples_by_size):
     return targets            
 
 print(take_times(1000, 5))
-                    

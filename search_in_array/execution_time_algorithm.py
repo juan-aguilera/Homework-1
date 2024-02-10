@@ -14,7 +14,7 @@ def take_execution_time(minimum_size, maximum_size, step, samples_by_size):
         table_row = [size]
         times = take_times(size, samples_by_size)
         return_table.append(table_row + times)
-        print(times)
+        #print(times)
 
     return return_table
 
@@ -50,8 +50,9 @@ def take_time_for_algorithm(samples_array, targets, search_algorithm):
     for sample in samples_array:
         tg_cnt += 1
         start_time = time.time()
-        search_algorithm(sample.copy(),targets[tg_cnt]) 
+        search_algorithm(sample,targets[tg_cnt]) 
         times.append(int(constants.TIME_MULTIPLIER * (time.time() - start_time)))
+    print(times)
 
     times.sort()
     return times[len(times) // 2]

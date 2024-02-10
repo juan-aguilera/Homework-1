@@ -1,0 +1,11 @@
+Orientacion frente al como hacer un generador de palabras con sentido de manera aleatoria 
+¿Por que se crea el archivo __init__.py?
+No olvidar añadir la complejidad computacional de cada algoritmo 
+
+
+Ideas de graficación: 
+
+calcular el tamaño de memoria usada para un tamaño de variable determinada 
+calcular el numero de operaciones elementales 
+
+podemos comprarar los algoritmos si la lista llega o no ordenada al archivo de algoritmos
