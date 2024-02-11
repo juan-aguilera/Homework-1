@@ -1,22 +1,23 @@
 from array import array
 # 1st algorithm : Linar search method
 def linear_search (my_array, target):
-    cnt = 0
+    #cnt = 0
     for i in range(len(my_array)):
-        cnt +=1
+        #cnt +=1
         if my_array[i] == target:
             return i
-    return print("Target not found #1 " + str(cnt))
+    return -1  
+#print("Target not found #1 " + str(cnt))
 
 #2nd algorithm : Binary search method
 
 def binary_search (my_array, target):
     #my_array = array('i',sorted(my_array))
-    cnt = 0 
+    #cnt = 0 
     min = 0
     max = len(my_array)-1
     while min <= max :
-        cnt += 1
+        #cnt += 1
         mid = (min + max) // 2
         if my_array[mid] == target:
             return mid
@@ -24,7 +25,8 @@ def binary_search (my_array, target):
             min = mid + 1
         else:
             max = mid - 1
-    return print("Target not found #2 " + str(cnt))
+    return -1 
+#print("Target not found #2 " + str(cnt))
 
 
 
@@ -50,9 +52,9 @@ def ternary_search (my_array, target):
     #my_array = array('i',sorted(my_array)) 
     low = 0
     high = len(my_array) - 1 
-    cnt = 0
+    #cnt = 0
     while low <= high : 
-        cnt += 1
+        #cnt += 1
         mid1 = low + (high-low) // 3
         mid2 = high - (high-low) // 3
         if my_array[mid1] == target:
@@ -66,7 +68,8 @@ def ternary_search (my_array, target):
         else:
             low = mid1 + 1
             high = mid2 - 1
-    return print("Target not found #3  " + str(cnt))
+    return -1 
+#print("Target not found #3  " + str(cnt))
 
 
 
