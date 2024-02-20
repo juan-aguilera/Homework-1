@@ -29,7 +29,7 @@ def binary_search (my_array, target):
 #print("Target not found #2 " + str(cnt))
 
 
-
+'''
 def binary_search_reverse (array, target):
     rev_array = sorted(array, reverse=True)
     min = 0
@@ -44,7 +44,7 @@ def binary_search_reverse (array, target):
             min = mid + 1
     return print("Target not found")
 
-
+'''
 
 #3rd algorithm : Ternary search method
 
@@ -71,7 +71,7 @@ def ternary_search (my_array, target):
     return -1 
 #print("Target not found #3  " + str(cnt))
 
-
+'''
 
 def ternary_search_reverse (array, target): 
     rev_array = sorted(array, reverse=True)
@@ -98,3 +98,5 @@ def ternary_search_reverse (array, target):
 #array = [2,4,8,6,12,10,25,30,20]
 #print(ternary_search_reverse (array, 25))
 #print(ternary_search(array,4))
+
+'''

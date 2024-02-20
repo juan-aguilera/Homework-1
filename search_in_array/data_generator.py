@@ -4,12 +4,14 @@ import constants
 
 
 def random_list(size, lim = constants.MAX_VALUE):
-    ran_list =[]
-    while len(ran_list) < size : 
-        ran_list.append(random.randint(0, lim))
-    ran_list.sort()
-    ran_array =array('i',ran_list)   
+    list_x =[x for x in range(0, size)]
+    #while len(ran_list) < size : 
+        #ran_list.append(random.randint(0, lim))
+    #ran_list.sort()
+    ran_array =array('i',list_x)   
     return ran_array
 
 def gen_target(sample_array):
-    return random.choice(sample_array)
+    
+    #random.choice(sample_array)
+    return -12

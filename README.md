@@ -38,3 +38,14 @@ Python 3.11.0
 * To run unit testing: `./test.bat`
 * To try a default example, run: `: ./run.bat`. In the file ./run.bat is just an example, you can modify it. Theck the `app.py` file to get to understand how it works.
 
+COVERAGE REPORT
+-------------------------------------------------
+algorithms.py                    36      8    78%
+constants.py                      2      0   100%
+data_generator.py                 9      0   100%
+execution_time_algorithm.py      30      0   100%
+running_file.py                  24      0   100%
+unitest_plot.py                  10      0   100%
+-------------------------------------------------
+TOTAL                           111      8    93%
+

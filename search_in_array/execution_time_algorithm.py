@@ -52,7 +52,7 @@ def take_time_for_algorithm(samples_array, targets, search_algorithm):
         start_time = time.time()
         search_algorithm(sample,targets[tg_cnt]) 
         times.append(int(constants.TIME_MULTIPLIER * (time.time() - start_time)))
-    print(times)
+    #print(times)
 
     times.sort()
     return times[len(times) // 2]

@@ -4,35 +4,29 @@ import algorithms
 import pygame as pg
 import numpy as np
 import matplotlib.pyplot as plt
-size = []
-time_1 = []
-time_2 = []
-time_3 = []
 
-if __name__ == "__main__":
-    table = execution_time_algorithm.take_execution_time(10000,100000,10000,25)
+def plot_execution_time():
+    size = []
+    time_1 = []
+    time_2 = []
+    time_3 = []
+    table = execution_time_algorithm.take_execution_time(10000,100000,10000,3)
     for row in table:
         size.append(row[0])
         time_1.append(row[1])
-        time_2.append(row[2])
-        time_3.append(row[3])
-    
-    bar_width = 10
-
+        time_2.append(row[1])
+        time_3.append(row[2])
+        #print(row)
+  
     time_1_x = [x for x in size]
-    time_2_x = [x - bar_width for x in size]
-    time_3_x = [x + bar_width for x in size]
+    fig, ax = plt.subplots()
+    ax.plot(size, time_2, mfc = 'black', marker = '.', ms = 12, color= 'blue', label='Binary Algorithm',linestyle= '--')  
+    ax.plot(size, time_3, mfc = 'black', marker = '.', ms = 12, color= 'orange', label='Ternary Algorithm',linestyle= '--')
+    ax.plot(size, time_1, mfc = 'black', marker = '.', ms = 12, color= 'yellow', label='Linear Algorithm',linestyle= '--')
+    #plt.show()
 
-    plt.bar(time_1_x, time_1, bar_width, color = 'b', label = 'Linear search')
-    plt.bar(time_2_x, time_2, bar_width, color = 'g', label = 'Binary search')
-    plt.bar(time_3_x, time_3, bar_width, color = 'r', label = 'Ternary search')
+    return fig
 
-    plt.xlabel = ('Array size')
-    plt.ylabel = ('Execution time [ms]')
-
-    plt.legend()
-
-    plt.show()
 
 """     width = 600
     heigth = 600
